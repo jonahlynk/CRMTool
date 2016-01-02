@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:weightSum="2"
+        >
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:src="@drawable/back"
+            android:id="@+id/backbtn"
+            android:gravity="left"
+            android:layout_weight="0.4"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:text="Existing Prospect"
+            android:layout_gravity="center"
+            android:layout_weight="1.5"
+            />
+        </LinearLayout>
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <TextView
+                    style="@style/form_text_sytle"
+                    android:text="Customer Name"
+                    />
+
+                <TextView
+                    style="@style/form_text_value_sytle"
+                    android:id="@+id/custnameval"
+                    />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="5dp"
+                >
+                <TextView
+                    style="@style/form_text_sytle"
+                    android:text="Customer Code"
+                    />
+
+                <TextView
+                    style="@style/form_text_value_sytle"
+                    android:id="@+id/custCodeVal"
+                    />
+
+            </LinearLayout>
+
+
+        <!--
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            >
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Get Location"
+                android:paddingLeft="5dp"
+                android:paddingTop="5dp"
+                android:paddingRight="5dp"
+                android:paddingBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:id="@+id/geo"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/tick"
+                android:layout_marginLeft="50dp"
+                android:visibility="invisible"
+                android:id="@+id/tickid"
+                />
+        </LinearLayout>
+        -->
+
+        <!--
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp"
+                >
+
+                <TextView
+                    style="@style/form_text_sytle"
+                    android:text="Business Address"
+                    />
+
+
+                <TextView
+                    style="@style/form_text_value_sytle"
+                    android:text="Customer Name"
+                    android:id="@+id/busiaddrval"
+                    />
+            </LinearLayout>
+        -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="5dp"
+                >
+                <TextView
+                    android:text="Contact Person"
+                    style="@style/form_text_sytle"
+                    />
+
+                <TextView
+                    style="@style/form_text_value_sytle"
+                    android:id="@+id/contPersionValue"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="5dp"
+                >
+                <TextView
+                    style="@style/form_text_sytle"
+                    android:text="Phone 1"
+                    />
+
+                <TextView
+                    style="@style/form_text_value_sytle"
+                    android:id="@+id/phone1value"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="5dp"
+                >
+                <TextView
+                    android:text="Phone 2"
+                    style="@style/form_text_sytle"
+                    />
+
+                <TextView
+                    style="@style/form_text_value_sytle"
+                    android:id="@+id/phone2value"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="5dp"
+                >
+                <TextView
+                    android:text="Customer Type"
+                    style="@style/form_text_sytle"
+                    />
+
+                <TextView
+                    style="@style/form_text_value_sytle"
+                    android:id="@+id/customerTypevalue"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="5dp"
+                >
+                <TextView
+                    style="@style/form_text_sytle"
+                    android:text="Remarks"
+                    />
+
+                <TextView
+                    style="@style/form_text_value_sytle"
+                    android:id="@+id/remarksvalue"
+                    />
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="5dp"
+            >
+            <TextView
+                style="@style/form_text_sytle"
+                android:text="Reason"
+                />
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/reason"
+                android:prompt="@string/busiType_prompt"
+                android:layout_marginTop="5dp"
+                />
+            <TextView
+                style="@style/form_text_value_sytle"
+                android:id="@+id/reasonne"
+                android:visibility="gone"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="5dp"
+            >
+            <TextView
+                style="@style/form_text_sytle"
+                android:text="Revisit Remarks"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/remarks_revisit"
+                android:layout_marginLeft="10dp"
+                android:imeOptions="actionDone"
+                android:inputType="textNoSuggestions"
+                android:focusableInTouchMode="true"
+                />
+            <TextView
+                style="@style/form_text_value_sytle"
+                android:id="@+id/remarksne"
+                />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            >
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Update Location"
+                android:paddingLeft="5dp"
+                android:paddingTop="5dp"
+                android:paddingRight="5dp"
+                android:paddingBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:id="@+id/geo"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:src="@drawable/tick"
+                android:layout_marginLeft="50dp"
+                android:visibility="invisible"
+                android:id="@+id/tickid"
+                />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/cross"
+                android:layout_marginLeft="50dp"
+                android:visibility="gone"
+                android:id="@+id/crossid"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:layout_marginBottom="20dp"
+            >
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="Submit"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:textAllCaps="false"
+                android:id="@+id/submitbtn"
+                android:visibility="visible"
+                />
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="Edit"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:layout_marginTop="15dp"
+                android:id="@+id/editbtn"
+                />
+        </LinearLayout>
+
+            <!--
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2px"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="#000000"
+            />
+            -->
+
+
+    </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>
+

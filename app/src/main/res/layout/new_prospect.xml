@@ -1,0 +1,513 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:weightSum="2"
+        >
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:src="@drawable/back"
+            android:id="@+id/backbtn"
+            android:gravity="left"
+            android:layout_weight="0.5"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:text="Prospect Details"
+            android:layout_gravity="center"
+            android:layout_weight="1.5"
+            />
+        </LinearLayout>
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <TextView
+                    style="@style/form_text_sytle"
+                    android:text="Customer Name"
+                    />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/custname"
+                    android:layout_marginLeft="10dp"
+                    android:inputType="textNoSuggestions"
+                    android:imeOptions="actionDone"
+                    />
+                <TextView
+                    style="@style/form_text_value_sytle"
+                    android:text=""
+                    android:id="@+id/businamene"
+                    android:visibility="gone"
+                    />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="5dp"
+                >
+                <TextView
+                    style="@style/form_text_sytle"
+                    android:text="Business Type"
+                    />
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/businessType"
+                    android:prompt="@string/busiType_prompt"
+                    android:layout_marginTop="5dp"
+                    />
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            >
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Get Location"
+                android:paddingLeft="5dp"
+                android:paddingTop="5dp"
+                android:paddingRight="5dp"
+                android:paddingBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:id="@+id/geo"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:src="@drawable/tick"
+                android:layout_marginLeft="50dp"
+                android:visibility="invisible"
+                android:id="@+id/tickid"
+                />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/cross"
+                android:layout_marginLeft="50dp"
+                android:visibility="gone"
+                android:id="@+id/crossid"
+                />
+
+        </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp"
+                >
+
+                <TextView
+                    style="@style/form_text_sytle"
+                    android:text="Business Address"
+                    />
+
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/busiaddr"
+                    android:layout_marginLeft="10dp"
+                    android:inputType="textNoSuggestions"
+                    android:imeOptions="actionNext"
+                    android:singleLine="true"
+                    />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="5dp"
+                >
+                <TextView
+                    android:text="Contact Person"
+                    style="@style/form_text_sytle"
+                    />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/contPerson"
+                    android:layout_marginLeft="10dp"
+                    android:inputType="textNoSuggestions"
+                    android:imeOptions="actionNext"
+                    android:singleLine="true"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="5dp"
+                >
+                <TextView
+                    style="@style/form_text_sytle"
+                    android:text="Phone 1"
+                    />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:inputType="phone"
+                    android:imeOptions="actionNext"
+                    android:id="@+id/phone1"
+                    />
+
+                <TextView
+                    style="@style/form_text_value_sytle"
+                    android:text="Customer Name"
+                    android:id="@+id/phone1ne"
+                    android:visibility="gone"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="5dp"
+                >
+                <TextView
+                    android:text="Phone 2"
+                    style="@style/form_text_sytle"
+                    />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:inputType="phone"
+                    android:id="@+id/phone2"
+                    android:imeOptions="actionDone"
+                    />
+            </LinearLayout>
+
+        <Switch
+            style="@style/switch_attr"
+            android:text="Different Load Point ?"
+            android:layout_marginTop="15dp"
+            android:id="@+id/loadPt"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:visibility="gone"
+            android:id="@+id/loadaddrlayout"
+            >
+
+            <TextView
+                style="@style/form_text_sytle"
+                android:text="Loading Address"
+                />
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/loadaddr"
+                android:layout_marginLeft="10dp"
+                android:inputType="textNoSuggestions"
+                android:imeOptions="actionDone"
+                android:singleLine="true"
+                />
+        </LinearLayout>
+
+        <Switch
+            style="@style/switch_attr"
+            android:text="Use Truck ?"
+            android:layout_marginTop="15dp"
+            android:id="@+id/useTruck"
+            />
+
+        <Switch
+            style="@style/switch_attr"
+            android:text="Own Truck ?"
+            android:layout_marginTop="15dp"
+            android:id="@+id/ownTruck"
+            />
+
+        <Switch
+            style="@style/switch_attr"
+            android:text="Labour Required ?"
+            android:layout_marginTop="15dp"
+            android:id="@+id/labReq"
+            />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="15dp"
+                >
+                <TextView
+                    android:text="Customer Type"
+                    style="@style/form_text_sytle"
+                    />
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/customerType"
+                    android:prompt="@string/busiType_prompt"
+                    android:layout_marginTop="5dp"
+                    />
+                <!--
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="5dp"
+                    android:padding="20dp"
+                    >
+                    <ToggleButton
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:checked="true"
+                        android:textOn="HIGH"
+                        android:textOff="HIGH"
+                        android:layout_weight="1"
+                        android:id="@+id/hightb"
+                        />
+
+                    <ToggleButton
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:checked="false"
+                        android:textOn="MEDIUM"
+                        android:textOff="MEDIUM"
+                        android:layout_weight="1"
+                        android:id="@+id/medtb"
+                        />
+
+                    <ToggleButton
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:checked="false"
+                        android:textOn="LOW"
+                        android:textOff="LOW"
+                        android:layout_weight="1"
+                        android:id="@+id/lowtb"
+                        />
+                </LinearLayout>
+                -->
+                s
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="5dp"
+                >
+                <TextView
+                    android:text="Vehicle Type"
+                    style="@style/form_text_sytle"
+
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="5dp"
+                    android:padding="20dp"
+                    >
+                    <ToggleButton
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:checked="false"
+                        android:textOn="LYNKS"
+                        android:textOff="LYNKS"
+                        android:layout_weight="1"
+                        android:id="@+id/smalltb"
+                        />
+
+                    <ToggleButton
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:checked="false"
+                        android:textOn="LYNKM"
+                        android:textOff="LYNKM"
+                        android:layout_weight="1"
+                        android:id="@+id/mediumtb"
+                        />
+
+                    <ToggleButton
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:checked="false"
+                        android:textOn="LYNKL"
+                        android:textOff="LYNKL"
+                        android:layout_weight="1"
+                        android:id="@+id/largetb"
+                        />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:text="Trucks Booked Per Week"
+                    />
+
+                <EditText
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:inputType="number"
+                    android:imeOptions="actionDone"
+                    android:maxLength="3"
+                    android:singleLine="true"
+                    android:id="@+id/TrkperWk"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="5dp"
+                >
+                <TextView
+                    style="@style/form_text_sytle"
+                    android:text="Remarks"
+                    />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:inputType="textNoSuggestions"
+                    android:imeOptions="actionDone"
+                    android:id="@+id/remarks"
+                    />
+                <TextView
+                    style="@style/form_text_value_sytle"
+                    android:text="Customer Name"
+                    android:id="@+id/remarksne"
+                    android:visibility="gone"
+                    />
+
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:padding="50dp"
+            android:layout_marginBottom="20dp"
+            >
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Submit"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:id="@+id/submitbtn"
+                />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="cancel"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:textAllCaps="false"
+                android:id="@+id/cancelbtn"
+                android:visibility="gone"
+
+                />
+        </LinearLayout>
+
+            <!--
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2px"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="#000000"
+            />
+            -->
+
+
+    </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>
+

@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">LynkSalesForce</string>
+
+    <string name="busiType_prompt">Select..</string>
+    <string-array name="busiTypearr">
+        <item>MARBLES</item>
+        <item>HARDWARES</item>
+        <item>LUBRICANTS</item>
+        <item>HOME INTERIORS</item>
+        <item>FURNITURE</item>
+    </string-array>
+
+    <string name="confirm">Choose</string>
+    <string-array name="confirmarr">
+        <item>YES</item>
+        <item>NO</item>
+    </string-array>
+
+    <string name="vehicleType">Select</string>
+    <string-array name="vehicleTypearr">
+        <item>LYNK SMALL</item>
+        <item>LYNK MEDIUM</item>
+        <item>LYNK LARGE</item>
+        <item>LYNK SMALL-MEDIUM</item>
+        <item>LYNK SMALL-LARGE</item>
+        <item>LYNK MEDIUM-LARGE</item>
+    </string-array>
+
+    <string name="customerType">Select</string>
+    <string-array name="customerTypearr">
+        <item>HIGH</item>
+        <item>LOW</item>
+        <item>MEDIUM</item>
+    </string-array>
+
+    <string name="title_activity_fullscreen">FullscreenActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="title_activity_prospect">Prospect</string>
+
+
+</resources>
